@@ -83,7 +83,6 @@ export default (function() {
 
 	function setup(_canvas) {
 		let canvas = _canvas;
-		console.log(canvas);
 		context = hkc.setup(canvas);
 		width = canvas.clientWidth;
 		height = canvas.clientHeight;
@@ -99,7 +98,7 @@ export default (function() {
 	}
 
 	function reset() {
-		config = {};
+		let config = {};
 		update_speed = config.speed || 1000/fps;
 		
 		hkc.stopUpdating();
